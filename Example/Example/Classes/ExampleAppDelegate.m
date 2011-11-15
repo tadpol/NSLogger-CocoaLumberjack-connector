@@ -35,6 +35,7 @@
     [self configureLogger];
     
     DDLogInfo(@"Hello from the Logger!");
+    self.window.rootViewController = [[[UITableViewController alloc] init] autorelease];
     [self.window makeKeyAndVisible];    
     DDLogWarn(@"I am a warning!");
     
