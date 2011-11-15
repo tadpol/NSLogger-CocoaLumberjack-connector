@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'NSLogger-CocoaLumberjack-connector'
-  s.version  = '1.0'
+  s.version  = '1.1'
   s.license  = 'BSD'
   s.summary  = 'Bridges NSLogger and CocoaLumberjack.'
   s.homepage = 'http://example.com/NSLogger-CocoaLumberjack-connector'
