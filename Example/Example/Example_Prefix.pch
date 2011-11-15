@@ -9,12 +9,3 @@
 
 #import "DDLog.h"
 
-
-// http://code.google.com/p/cocoalumberjack/wiki/XcodeTricks - compiles most log messages out of the release build, but not all!
-#ifdef DEBUG
-static const int ddLogLevel = LOG_LEVEL_INFO;
-#else
-static const int ddLogLevel = LOG_LEVEL_WARN; //LOG_LEVEL_INFO;
-#endif
-
-

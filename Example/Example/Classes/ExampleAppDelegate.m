@@ -11,6 +11,14 @@
 #import "DDTTYLogger.h"
 #import "DDNSLoggerLogger.h"
 
+// http://code.google.com/p/cocoalumberjack/wiki/XcodeTricks - compiles most log messages out of the release build, but not all!
+// DEBUG is defined as preprocessor macro in project settings
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_INFO;
+#else
+static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif
+
 @implementation ExampleAppDelegate
 
 @synthesize window;
