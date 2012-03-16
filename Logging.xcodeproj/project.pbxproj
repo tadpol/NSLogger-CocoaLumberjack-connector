@@ -13,13 +13,13 @@
 		E49973341513866C0046D071 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E49973311513866C0046D071 /* LoggerCommon.h */; };
 		E49974E3151386AF0046D071 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E499734D151386AB0046D071 /* DDAbstractDatabaseLogger.h */; };
 		E49974E4151386AF0046D071 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E499734E151386AB0046D071 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E49974E5151386AF0046D071 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E499734F151386AB0046D071 /* DDASLLogger.h */; };
+		E49974E5151386AF0046D071 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E499734F151386AB0046D071 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49974E6151386AF0046D071 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997350151386AB0046D071 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E49974E7151386AF0046D071 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997351151386AB0046D071 /* DDFileLogger.h */; };
+		E49974E7151386AF0046D071 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997351151386AB0046D071 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49974E8151386AF0046D071 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997352151386AB0046D071 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E49974E9151386AF0046D071 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997353151386AB0046D071 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49974EA151386AF0046D071 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997354151386AB0046D071 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E49974EB151386AF0046D071 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997355151386AB0046D071 /* DDTTYLogger.h */; };
+		E49974EB151386AF0046D071 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997355151386AB0046D071 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49974EC151386AF0046D071 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997356151386AB0046D071 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E49975B31513871D0046D071 /* Logging-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E49975B21513871D0046D071 /* Logging-Prefix.pch */; };
 		E49975B9151389960046D071 /* DDNSLoggerLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B4151389960046D071 /* DDNSLoggerLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
