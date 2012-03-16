@@ -1,0 +1,10 @@
+//
+//  Library-Release.xcconfig
+//  Logging
+//
+//  Created by Stephan Diederich on 16.03.12.
+//  Copyright (c) 2012 XBMC Media Center Project. All rights reserved.
+//
+
+#include "Library-Base.xcconfig"
+

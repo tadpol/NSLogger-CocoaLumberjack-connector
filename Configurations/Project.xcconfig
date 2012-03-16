@@ -1,0 +1,11 @@
+//
+//  Project.xcconfig
+//  Logging
+//
+//  Created by Stephan Diederich on 16.03.12.
+//  Copyright (c) 2012 XBMC Media Center Project. All rights reserved.
+//
+
+IPHONEOS_DEPLOYMENT_TARGET = 4.0
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) CONFIGURATION_$(CONFIGURATION) ALLOW_COCOA_USE

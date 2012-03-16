@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E499718E151385EB0046D071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E499718D151385EB0046D071 /* Foundation.framework */; };
+		E49973321513866C0046D071 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E499732F1513866C0046D071 /* LoggerClient.h */; };
+		E49973331513866C0046D071 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E49973301513866C0046D071 /* LoggerClient.m */; };
+		E49973341513866C0046D071 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E49973311513866C0046D071 /* LoggerCommon.h */; };
+		E49974E3151386AF0046D071 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E499734D151386AB0046D071 /* DDAbstractDatabaseLogger.h */; };
+		E49974E4151386AF0046D071 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E499734E151386AB0046D071 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E49974E5151386AF0046D071 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E499734F151386AB0046D071 /* DDASLLogger.h */; };
+		E49974E6151386AF0046D071 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997350151386AB0046D071 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E49974E7151386AF0046D071 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997351151386AB0046D071 /* DDFileLogger.h */; };
+		E49974E8151386AF0046D071 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997352151386AB0046D071 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E49974E9151386AF0046D071 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997353151386AB0046D071 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E49974EA151386AF0046D071 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997354151386AB0046D071 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E49974EB151386AF0046D071 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4997355151386AB0046D071 /* DDTTYLogger.h */; };
+		E49974EC151386AF0046D071 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4997356151386AB0046D071 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E49975B31513871D0046D071 /* Logging-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E49975B21513871D0046D071 /* Logging-Prefix.pch */; };
+		E49975B9151389960046D071 /* DDNSLoggerLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B4151389960046D071 /* DDNSLoggerLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E49975BA151389960046D071 /* DDNSLoggerLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E49975B5151389960046D071 /* DDNSLoggerLogger.m */; };
+		E49975BB151389960046D071 /* PSDDFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B7151389960046D071 /* PSDDFormatter.h */; };
+		E49975BC151389960046D071 /* PSDDFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E49975B8151389960046D071 /* PSDDFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E499718A151385EB0046D071 /* libLogging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogging.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E499718D151385EB0046D071 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E499732F1513866C0046D071 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerClient.h; path = "Client Logger/iOS/LoggerClient.h"; sourceTree = "<group>"; };
+		E49973301513866C0046D071 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerClient.m; path = "Client Logger/iOS/LoggerClient.m"; sourceTree = "<group>"; };
+		E49973311513866C0046D071 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerCommon.h; path = "Client Logger/iOS/LoggerCommon.h"; sourceTree = "<group>"; };
+		E499734D151386AB0046D071 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		E499734E151386AB0046D071 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		E499734F151386AB0046D071 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		E4997350151386AB0046D071 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		E4997351151386AB0046D071 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		E4997352151386AB0046D071 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		E4997353151386AB0046D071 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		E4997354151386AB0046D071 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		E4997355151386AB0046D071 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		E4997356151386AB0046D071 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		E49975B21513871D0046D071 /* Logging-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Logging-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E49975B4151389960046D071 /* DDNSLoggerLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNSLoggerLogger.h; sourceTree = SOURCE_ROOT; };
+		E49975B5151389960046D071 /* DDNSLoggerLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNSLoggerLogger.m; sourceTree = SOURCE_ROOT; };
+		E49975B7151389960046D071 /* PSDDFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDDFormatter.h; sourceTree = "<group>"; };
+		E49975B8151389960046D071 /* PSDDFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDDFormatter.m; sourceTree = "<group>"; };
+		E49975BE15138A3D0046D071 /* Library-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Library-Base.xcconfig"; sourceTree = "<group>"; };
+		E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Library-Debug.xcconfig"; sourceTree = "<group>"; };
+		E49975C015138A3D0046D071 /* Library-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Library-Release.xcconfig"; sourceTree = "<group>"; };
+		E49975C115138A3D0046D071 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E49975C215138A3D0046D071 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4997187151385EB0046D071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E499718E151385EB0046D071 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E499717F151385EA0046D071 = {
+			isa = PBXGroup;
+			children = (
+				E499718F151385EB0046D071 /* Logging */,
+				E49975BD15138A3D0046D071 /* Configurations */,
+				E499718C151385EB0046D071 /* Frameworks */,
+				E499718B151385EB0046D071 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E499718B151385EB0046D071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E499718A151385EB0046D071 /* libLogging.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E499718C151385EB0046D071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E499718D151385EB0046D071 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E499718F151385EB0046D071 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				E49975B4151389960046D071 /* DDNSLoggerLogger.h */,
+				E49975B5151389960046D071 /* DDNSLoggerLogger.m */,
+				E4997335151386AB0046D071 /* CocoaLumberjack */,
+				E49975B6151389960046D071 /* PSDDFormatter */,
+				E49971A1151386460046D071 /* NSLogger */,
+				E49975B11513870F0046D071 /* Supporting Files */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		E49971A1151386460046D071 /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				E499732F1513866C0046D071 /* LoggerClient.h */,
+				E49973301513866C0046D071 /* LoggerClient.m */,
+				E49973311513866C0046D071 /* LoggerCommon.h */,
+			);
+			path = NSLogger;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4997335151386AB0046D071 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				E499734C151386AB0046D071 /* Lumberjack */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = SOURCE_ROOT;
+		};
+		E499734C151386AB0046D071 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				E499734D151386AB0046D071 /* DDAbstractDatabaseLogger.h */,
+				E499734E151386AB0046D071 /* DDAbstractDatabaseLogger.m */,
+				E499734F151386AB0046D071 /* DDASLLogger.h */,
+				E4997350151386AB0046D071 /* DDASLLogger.m */,
+				E4997351151386AB0046D071 /* DDFileLogger.h */,
+				E4997352151386AB0046D071 /* DDFileLogger.m */,
+				E4997353151386AB0046D071 /* DDLog.h */,
+				E4997354151386AB0046D071 /* DDLog.m */,
+				E4997355151386AB0046D071 /* DDTTYLogger.h */,
+				E4997356151386AB0046D071 /* DDTTYLogger.m */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		E49975B11513870F0046D071 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E49975B21513871D0046D071 /* Logging-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E49975B6151389960046D071 /* PSDDFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				E49975B7151389960046D071 /* PSDDFormatter.h */,
+				E49975B8151389960046D071 /* PSDDFormatter.m */,
+			);
+			path = PSDDFormatter;
+			sourceTree = SOURCE_ROOT;
+		};
+		E49975BD15138A3D0046D071 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				E49975BE15138A3D0046D071 /* Library-Base.xcconfig */,
+				E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */,
+				E49975C015138A3D0046D071 /* Library-Release.xcconfig */,
+				E49975C115138A3D0046D071 /* Project.xcconfig */,
+				E49975C215138A3D0046D071 /* Warnings.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4997188151385EB0046D071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49973321513866C0046D071 /* LoggerClient.h in Headers */,
+				E49973341513866C0046D071 /* LoggerCommon.h in Headers */,
+				E49974E3151386AF0046D071 /* DDAbstractDatabaseLogger.h in Headers */,
+				E49974E5151386AF0046D071 /* DDASLLogger.h in Headers */,
+				E49974E7151386AF0046D071 /* DDFileLogger.h in Headers */,
+				E49974E9151386AF0046D071 /* DDLog.h in Headers */,
+				E49974EB151386AF0046D071 /* DDTTYLogger.h in Headers */,
+				E49975B31513871D0046D071 /* Logging-Prefix.pch in Headers */,
+				E49975B9151389960046D071 /* DDNSLoggerLogger.h in Headers */,
+				E49975BB151389960046D071 /* PSDDFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E4997189151385EB0046D071 /* Logging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E499719A151385EB0046D071 /* Build configuration list for PBXNativeTarget "Logging" */;
+			buildPhases = (
+				E4997186151385EB0046D071 /* Sources */,
+				E4997187151385EB0046D071 /* Frameworks */,
+				E4997188151385EB0046D071 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logging;
+			productName = Logging;
+			productReference = E499718A151385EB0046D071 /* libLogging.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4997181151385EA0046D071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "XBMC Media Center Project";
+			};
+			buildConfigurationList = E4997184151385EA0046D071 /* Build configuration list for PBXProject "Logging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = E499717F151385EA0046D071;
+			productRefGroup = E499718B151385EB0046D071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4997189151385EB0046D071 /* Logging */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4997186151385EB0046D071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49973331513866C0046D071 /* LoggerClient.m in Sources */,
+				E49974E4151386AF0046D071 /* DDAbstractDatabaseLogger.m in Sources */,
+				E49974E6151386AF0046D071 /* DDASLLogger.m in Sources */,
+				E49974E8151386AF0046D071 /* DDFileLogger.m in Sources */,
+				E49974EA151386AF0046D071 /* DDLog.m in Sources */,
+				E49974EC151386AF0046D071 /* DDTTYLogger.m in Sources */,
+				E49975BA151389960046D071 /* DDNSLoggerLogger.m in Sources */,
+				E49975BC151389960046D071 /* PSDDFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E4997198151385EB0046D071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4997199151385EB0046D071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E499719B151385EB0046D071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Logging.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E499719C151385EB0046D071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49975C015138A3D0046D071 /* Library-Release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Logging.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4997184151385EA0046D071 /* Build configuration list for PBXProject "Logging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4997198151385EB0046D071 /* Debug */,
+				E4997199151385EB0046D071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E499719A151385EB0046D071 /* Build configuration list for PBXNativeTarget "Logging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E499719B151385EB0046D071 /* Debug */,
+				E499719C151385EB0046D071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4997181151385EA0046D071 /* Project object */;
+}
