@@ -24,7 +24,7 @@
 		E49975B31513871D0046D071 /* Logging-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E49975B21513871D0046D071 /* Logging-Prefix.pch */; };
 		E49975B9151389960046D071 /* DDNSLoggerLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B4151389960046D071 /* DDNSLoggerLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49975BA151389960046D071 /* DDNSLoggerLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E49975B5151389960046D071 /* DDNSLoggerLogger.m */; };
-		E49975BB151389960046D071 /* PSDDFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B7151389960046D071 /* PSDDFormatter.h */; };
+		E49975BB151389960046D071 /* PSDDFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B7151389960046D071 /* PSDDFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49975BC151389960046D071 /* PSDDFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E49975B8151389960046D071 /* PSDDFormatter.m */; };
 /* End PBXBuildFile section */
 
