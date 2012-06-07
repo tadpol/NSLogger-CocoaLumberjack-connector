@@ -65,12 +65,9 @@ static Logger *_DDNSLogger_logger = nil;
 
 	if (formatter)
 	{
-    // formatting is supported but not encouraged!
+        // formatting is supported but not encouraged!
 		logMsg = [formatter formatLogMessage:logMessage];
-	}else {
-    // apply own mini-formatter here!
-    logMsg = [NSString stringWithFormat:@"%@%d: %@", [logMessage methodName], logMessage->lineNumber, logMsg];
-  }
+    }
 
 	if (logMsg)
 	{
