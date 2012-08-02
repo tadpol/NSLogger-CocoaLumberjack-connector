@@ -43,7 +43,6 @@ static Logger *_DDNSLogger_logger = nil;
 {
 	if (sharedInstance != nil)
 	{
-		[self release];
 		return nil;
 	}
 
@@ -83,7 +82,7 @@ static Logger *_DDNSLogger_logger = nil;
 		}
 
 	LogMessageF(logMessage->file, logMessage->lineNumber, logMessage->function, [logMessage fileName], 
-                                nsloggerLogLevel, @"%@", logMsg);""
+                                nsloggerLogLevel, @"%@", logMsg);
     }
 }
 
