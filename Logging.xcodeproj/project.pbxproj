@@ -304,8 +304,8 @@
 			baseConfigurationReference = E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = (
-					armv6,
 					armv7,
+					armv7s,
 				);
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/Logging.dst;
@@ -315,6 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SDKROOT[arch=x86_64]" = macosx;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 x86_64 armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -323,8 +324,8 @@
 			baseConfigurationReference = E49975C015138A3D0046D071 /* Library-Release.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = (
-					armv6,
 					armv7,
+					armv7s,
 				);
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/Logging.dst;
@@ -333,6 +334,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 x86_64 armv7s armv7";
 			};
 			name = Release;
 		};
