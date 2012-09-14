@@ -217,7 +217,7 @@
 		E4997181151385EA0046D071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "XBMC Media Center Project";
 			};
 			buildConfigurationList = E4997184151385EA0046D071 /* Build configuration list for PBXProject "Logging" */;
