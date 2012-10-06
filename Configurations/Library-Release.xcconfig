@@ -8,3 +8,4 @@
 
 #include "Library-Base.xcconfig"
 
+RUN_CLANG_STATIC_ANALYZER = YES

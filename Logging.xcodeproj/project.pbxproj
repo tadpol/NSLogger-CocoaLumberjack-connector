@@ -262,7 +262,6 @@
 			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -277,7 +276,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 			};
 			name = Debug;
 		};
@@ -286,7 +284,6 @@
 			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -294,7 +291,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -303,8 +299,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */;
 			buildSettings = {
-				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
@@ -312,7 +306,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SDKROOT[arch=x86_64]" = macosx;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "i386 x86_64 armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -320,15 +313,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49975C015138A3D0046D071 /* Library-Release.xcconfig */;
 			buildSettings = {
-				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD_32_BIT)";
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "i386 x86_64 armv7s armv7";
 			};
 			name = Release;
 		};

@@ -8,4 +8,12 @@
 
 IPHONEOS_DEPLOYMENT_TARGET = 4.0
 
+ARCHS[sdk=macosx*] = $(ARCHS_STANDARD_64_BIT)
+ARCHS[sdk=iphoneos*] = armv7
+VALID_ARCHS = i386 x86_64 armv7s armv7
+
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos macosx
+
+
+
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) CONFIGURATION_$(CONFIGURATION) ALLOW_COCOA_USE
