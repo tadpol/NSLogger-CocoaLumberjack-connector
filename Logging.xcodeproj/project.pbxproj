@@ -217,7 +217,7 @@
 		E4997181151385EA0046D071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "XBMC Media Center Project";
 			};
 			buildConfigurationList = E4997184151385EA0046D071 /* Build configuration list for PBXProject "Logging" */;
@@ -262,6 +262,10 @@
 			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -284,6 +288,10 @@
 			baseConfigurationReference = E49975C115138A3D0046D071 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -299,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49975BF15138A3D0046D071 /* Library-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
@@ -313,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49975C015138A3D0046D071 /* Library-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
