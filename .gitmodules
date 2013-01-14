@@ -3,4 +3,4 @@
 	url = https://github.com/fpillet/NSLogger.git
 [submodule "CocoaLumberjack"]
 	path = CocoaLumberjack
-	url = https://github.com/robbiehanson/CocoaLumberjack.git
+	url = https://github.com/diederich/CocoaLumberjack.git
