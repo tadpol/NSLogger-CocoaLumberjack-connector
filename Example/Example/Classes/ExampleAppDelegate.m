@@ -6,10 +6,10 @@
 //
 
 #import "ExampleAppDelegate.h"
-#import "PSDDFormatter.h"
-#import "DDFileLogger.h"
-#import "DDTTYLogger.h"
-#import "DDNSLoggerLogger.h"
+#import "Logging/PSDDFormatter.h"
+#import "Logging/DDFileLogger.h"
+#import "Logging/DDTTYLogger.h"
+#import "Logging/DDNSLoggerLogger.h"
 
 // http://code.google.com/p/cocoalumberjack/wiki/XcodeTricks - compiles most log messages out of the release build, but not all!
 // DEBUG is defined as preprocessor macro in project settings
