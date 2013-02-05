@@ -355,7 +355,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = armv7;
 				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -375,7 +374,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = armv7;
 				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
