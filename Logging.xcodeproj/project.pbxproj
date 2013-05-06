@@ -355,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -363,10 +364,12 @@
 					"$(inherited)",
 					ALLOW_COCOA_USE,
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SDKROOT[arch=x86_64]" = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 			};
 			name = Debug;
 		};
@@ -374,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -382,9 +386,11 @@
 					"$(inherited)",
 					ALLOW_COCOA_USE,
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 			};
 			name = Release;
 		};
