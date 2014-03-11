@@ -6,4 +6,4 @@
 	url = https://github.com/diederich/CocoaLumberjack.git
 [submodule "Configurations"]
 	path = Configurations
-	url = https://github.com/diederich/xcconfigs
+	url = https://github.com/cocologics/xcconfigs
