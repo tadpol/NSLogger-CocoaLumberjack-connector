@@ -1,6 +1,6 @@
 [submodule "NSLogger"]
 	path = NSLogger
-	url = https://github.com/fpillet/NSLogger.git
+	url = https://github.com/cocologics/NSLogger.git
 [submodule "CocoaLumberjack"]
 	path = CocoaLumberjack
 	url = https://github.com/diederich/CocoaLumberjack.git
