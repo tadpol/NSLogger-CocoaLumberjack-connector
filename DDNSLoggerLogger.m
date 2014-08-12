@@ -47,8 +47,9 @@
             case LOG_FLAG_ERROR : nsloggerLogLevel = 0; break;
             case LOG_FLAG_WARN  : nsloggerLogLevel = 1; break;
             case LOG_FLAG_INFO  : nsloggerLogLevel = 2; break;
-            case LOG_FLAG_VERBOSE:nsloggerLogLevel = 3; break;
-            default : nsloggerLogLevel = 4; break;
+            case LOG_FLAG_DEBUG : nsloggerLogLevel = 3; break;
+            case LOG_FLAG_VERBOSE:nsloggerLogLevel = 4; break;
+            default : nsloggerLogLevel = 5; break;
         }
 
         NSString *tag = @"";
