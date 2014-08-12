@@ -2,6 +2,7 @@
 //  DDNSLoggerLogger.m
 //  Created by Peter Steinberger on 26.10.10.
 //
+//  Modifications: 12-Aug-2014 Michael Conrad Tadpol Tilstra
 
 #import "DDNSLoggerLogger.h"
 
@@ -10,85 +11,59 @@
 
 @implementation DDNSLoggerLogger
 
-static DDNSLoggerLogger *sharedInstance;
-
-// The logger instance we use
-static Logger *_DDNSLogger_logger = nil;
-
-/**
- * The runtime sends initialize to each class in a program exactly one time just before the class,
- * or any class that inherits from it, is sent its first message from within the program. (Thus the
- * method may never be invoked if the class is not used.) The runtime sends the initialize message to
- * classes in a thread-safe manner. Superclasses receive this message before their subclasses.
- *
- * This method may also be called directly (assumably by accident), hence the safety mechanism.
- **/
-+ (void)initialize
-{
-	static BOOL initialized = NO;
-	if (!initialized)
-	{
-		initialized = YES;
-
-		sharedInstance = [[DDNSLoggerLogger alloc] init];
-	}
-}
-
 + (DDNSLoggerLogger *)sharedInstance
 {
-	return sharedInstance;
+    static DDNSLoggerLogger *localLogger = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        localLogger = [DDNSLoggerLogger new];
+    });
+    return localLogger;
 }
 
 - (id)init
 {
-	if (sharedInstance != nil)
-	{
-		return nil;
-	}
-
-	if ((self = [super init]))
-	{
-    // create and remember the logger instance
-    _DDNSLogger_logger = LoggerInit();
-
-    // configure the logger
-    LoggerSetOptions(_DDNSLogger_logger, kLoggerOption_BufferLogsUntilConnection | kLoggerOption_BrowseBonjour | kLoggerOption_BrowseOnlyLocalDomain );
-    LoggerStart(_DDNSLogger_logger);
-	}
-	return self;
+    if ((self = [super init])) {
+        LoggerStart(NULL);
+    }
+    return self;
 }
 
 - (void)logMessage:(DDLogMessage *)logMessage
 {
-	NSString *logMsg = logMessage->logMsg;
+    NSString *logMsg = logMessage->logMsg;
 
-	if (formatter)
-	{
+    if (formatter) {
         // formatting is supported but not encouraged!
-		logMsg = [formatter formatLogMessage:logMessage];
+        logMsg = [formatter formatLogMessage:logMessage];
     }
 
-	if (logMsg)
-	{
-    int nsloggerLogLevel;
-		switch (logMessage->logFlag)
-		{
-      // NSLogger log levels start a 0, the bigger the number,
-      // the more specific / detailed the trace is meant to be
-			case LOG_FLAG_ERROR : nsloggerLogLevel = 0; break;
-			case LOG_FLAG_WARN  : nsloggerLogLevel = 1; break;
-			case LOG_FLAG_INFO  : nsloggerLogLevel = 2; break;
-			default : nsloggerLogLevel = 3; break;
-		}
+    if (logMsg) {
+        int nsloggerLogLevel;
+        switch (logMessage->logFlag) {
+            // NSLogger log levels start a 0, the bigger the number,
+            // the more specific / detailed the trace is meant to be
+            case LOG_FLAG_ERROR : nsloggerLogLevel = 0; break;
+            case LOG_FLAG_WARN  : nsloggerLogLevel = 1; break;
+            case LOG_FLAG_INFO  : nsloggerLogLevel = 2; break;
+            case LOG_FLAG_VERBOSE:nsloggerLogLevel = 3; break;
+            default : nsloggerLogLevel = 4; break;
+        }
 
-	LogMessageF(logMessage->file, logMessage->lineNumber, logMessage->function, [logMessage fileName], 
-                                nsloggerLogLevel, @"%@", logMsg);
+        NSString *tag = @"";
+        if (logMessage->tag) {
+            tag = [logMessage->tag description];
+        }
+
+        LogMessageF(logMessage->file, logMessage->lineNumber, logMessage->function, tag, nsloggerLogLevel, @"%@", logMsg);
     }
 }
 
 - (NSString *)loggerName
 {
-	return @"cocoa.lumberjack.NSLogger";
+    return @"cocoa.lumberjack.NSLogger";
 }
 
 @end
+/*  vim: set ai cin et sw=4 ts=4 : */
+
