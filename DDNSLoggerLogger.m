@@ -24,6 +24,7 @@
 - (id)init
 {
     if ((self = [super init])) {
+        LoggerSetOptions(LoggerGetDefaultLogger(), kLoggerOption_BrowseBonjour|kLoggerOption_BrowseOnlyLocalDomain|kLoggerOption_BufferLogsUntilConnection|kLoggerOption_UseSSL);
         LoggerStart(NULL);
     }
     return self;
