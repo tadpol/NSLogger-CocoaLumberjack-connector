@@ -3,6 +3,7 @@
 //  Created by Peter Steinberger on 26.10.10.
 //
 //  Modifications: 12-Aug-2014 Michael Conrad Tadpol Tilstra
+//  Modifications: 28-Mar-2015 Michael Conrad Tadpol Tilstra
 
 #import "DDNSLoggerLogger.h"
 
@@ -32,32 +33,32 @@
 
 - (void)logMessage:(DDLogMessage *)logMessage
 {
-    NSString *logMsg = logMessage->logMsg;
+    NSString *logMsg = logMessage->_message;
 
-    if (formatter) {
+    if (_logFormatter) {
         // formatting is supported but not encouraged!
-        logMsg = [formatter formatLogMessage:logMessage];
+        logMsg = [_logFormatter formatLogMessage:logMessage];
     }
 
     if (logMsg) {
         int nsloggerLogLevel;
-        switch (logMessage->logFlag) {
+        switch (logMessage->_flag) {
             // NSLogger log levels start a 0, the bigger the number,
             // the more specific / detailed the trace is meant to be
-            case LOG_FLAG_ERROR : nsloggerLogLevel = 0; break;
-            case LOG_FLAG_WARN  : nsloggerLogLevel = 1; break;
-            case LOG_FLAG_INFO  : nsloggerLogLevel = 2; break;
-            case LOG_FLAG_DEBUG : nsloggerLogLevel = 3; break;
-            case LOG_FLAG_VERBOSE:nsloggerLogLevel = 4; break;
+            case DDLogFlagError  : nsloggerLogLevel = 0; break;
+            case DDLogFlagWarning: nsloggerLogLevel = 1; break;
+            case DDLogFlagInfo   : nsloggerLogLevel = 2; break;
+            case DDLogFlagDebug  : nsloggerLogLevel = 3; break;
+            case DDLogFlagVerbose:nsloggerLogLevel = 4; break;
             default : nsloggerLogLevel = 5; break;
         }
 
         NSString *tag = @"";
-        if (logMessage->tag) {
-            tag = [logMessage->tag description];
+        if (logMessage->_tag) {
+            tag = [logMessage->_tag description];
         }
 
-        LogMessageF(logMessage->file, logMessage->lineNumber, logMessage->function, tag, nsloggerLogLevel, @"%@", logMsg);
+        LogMessageF([logMessage->_file UTF8String], (int)logMessage->_line, [logMessage->_function UTF8String], tag, nsloggerLogLevel, @"%@", logMsg);
     }
 }
 
